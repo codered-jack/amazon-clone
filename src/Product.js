@@ -1,11 +1,26 @@
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
+import Noty from "noty";
+import '../node_modules/noty/lib/noty.css';
+import '../node_modules/noty/lib/themes/mint.css';
+
 
 function Product({ id, title, image, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
 
   const addToBasket = () => {
+
+    new Noty({
+      theme: 'mint',
+      text: `<div class="noty_body"><div class="noty__container"><img src=${image}> ${title}</div></div>`,
+      timeout:10000,
+      animation: {
+        easing: 'swing',
+        speed: 500 // opening & closing animation speed
+      },
+      closeWith: ['click'],
+  }).show();
     // dispatch the item into the data layer
     dispatch({
       type: "ADD_TO_BASKET",
