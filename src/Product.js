@@ -14,7 +14,7 @@ function Product({ id, title, image, price, rating }) {
     new Noty({
       theme: 'mint',
       text: `<div class="noty_body"><div class="noty__container"><img src=${image}> ${title}</div></div>`,
-      timeout:10000,
+      timeout:2000,
       animation: {
         easing: 'swing',
         speed: 500 // opening & closing animation speed
