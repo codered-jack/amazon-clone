@@ -7,6 +7,7 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 import Payment from "./Payment";
 import Orders from "./Orders";
+import CartOverlay from "./CartOverlay";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { loadStripe } from "@stripe/stripe-js";
@@ -45,6 +46,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <CartOverlay />
         <Switch>
           <Route path="/orders">
             <Header />
