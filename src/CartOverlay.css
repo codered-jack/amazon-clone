@@ -12,13 +12,14 @@
 
 .cart {
   position: fixed;
-  top: 60px;
+  top: 100px;
   right: 0;
   background-color: white;
   z-index: 2;
   height: 100vh;
   width: 400px;
   color: black;
+  overflow-y: scroll;
 }
 .showCart {
   visibility: visible;
@@ -49,6 +50,7 @@
   padding-top: 10px;
   font-size: 12px;
   text-transform: capitalize;
+  margin-bottom: 120px;
 }
 
 .cart__body > img {

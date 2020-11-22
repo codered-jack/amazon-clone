@@ -16,6 +16,19 @@
 .home__image {
   width: 100%;
   z-index: -1;
-  margin-bottom: -150px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+@media (max-width: 750px) {
+  .carousel {
+    height: 150px !important;
+    margin-top: -22px;
+  }
+  .home__row {
+    flex-wrap: wrap;
+  }
+}
+
+.mdbcontainer {
+  margin-bottom: -150px;
 }

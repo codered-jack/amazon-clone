@@ -6,7 +6,7 @@ export const initialState = {
 
 // Selector
 export const getBasketTotal = (basket) =>
-  basket?.reduce((amount, item) => item.price + amount, 0);
+  basket?.reduce((amount, item) => item.price?.toFixed(2) + amount, 0);
 
 const reducer = (state, action) => {
   console.log(action);

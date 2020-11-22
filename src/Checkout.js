@@ -31,6 +31,16 @@ function Checkout() {
         <div>
           <h3>Hello, {user?.email}</h3>
           <h2 className="checkout__title">Your shopping Basket</h2>
+          {basket.length === 0 && (
+            <div className="checkout__main">
+              <img
+                className="checkout__image"
+                src="https://m.media-amazon.com/images/G/01/cart/empty/kettle-desaturated._CB445243794_.svg"
+              />
+
+              <h3 className="checkout__emptyCart">Your cart is empty</h3>
+            </div>
+          )}
         </div>
 
         <div class="checkout__item">

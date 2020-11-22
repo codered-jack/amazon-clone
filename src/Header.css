@@ -1,11 +1,24 @@
 .header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__top {
   height: 60px;
   display: flex;
   align-items: center;
   background-color: #131921;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+}
+
+.header__top a {
+  display: flex;
+  text-decoration: none;
+  font-style: unset;
+  color: white;
+  cursor: pointer;
 }
 
 .header__logo {
@@ -66,4 +79,47 @@
   margin-left: 10px;
   margin-right: 10px;
   color: white;
+}
+
+.subheader {
+  display: flex;
+  align-items: center;
+  background-color: #232f3e;
+  height: 39px;
+}
+
+.subheader__left {
+  display: flex;
+  align-items: center;
+}
+
+.subheader__left > .header__optionFeature {
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  color: white;
+}
+
+.subheader__left > .header__option {
+  margin-left: 2px;
+  padding: 0;
+}
+
+.subheader__right {
+  color: white;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.subheader__right > p {
+  border-radius: 3px;
+  font-size: 15px;
+  margin-right: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.subheader__right > p:hover {
+  box-shadow: 0 0 0 1px #fff inset;
 }

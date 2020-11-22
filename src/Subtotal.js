@@ -17,7 +17,7 @@ function Subtotal() {
   };
   const getTotal = () => {
     return basket.reduce(
-      (total, item) => total + item.price * item.quantity,
+      (total, item) => total + item.price?.toFixed(2) * item.quantity,
       0
     );
   };

@@ -1,16 +1,13 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import CarouselPage from "./sliderFeature";
 
 function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <img
-          className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
-          alt=""
-        />
+        <CarouselPage className="carousel" />
 
         <div className="home__row">
           <Product
@@ -50,6 +47,30 @@ function Home() {
             price={598.99}
             rating={4}
             image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+          />
+        </div>
+
+        <div className="home__row">
+          <Product
+            id="4903212"
+            title="Apple MacBook Air (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray (Latest Model)"
+            price={94900.99}
+            rating={5}
+            image="https://images-na.ssl-images-amazon.com/images/I/71k3fJh5EwL._AC_SL1500_.jpg"
+          />
+          <Product
+            id="27344930"
+            title="Wyze Cam Pan 1080p Pan/Tilt/Zoom Wi-Fi Indoor Smart Home Camera with Night Vision, 2-Way Audio, Works with Alexa & the Google Assistant, White - WYZECP1"
+            price={5000.99}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/31Y8NH8Ia5L._AC_.jpg"
+          />
+          <Product
+            id="328274435"
+            title="Beats Solo3 Wireless On-Ear Headphones - Apple W1 Headphone Chip, Class 1 Bluetooth, 40 Hours Of Listening Time - Black (Latest Model)"
+            price={17900.99}
+            rating={3}
+            image="https://m.media-amazon.com/images/I/51QxA-98Q+L._AC_UL320_.jpg"
           />
         </div>
 

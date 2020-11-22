@@ -4,6 +4,7 @@ import { useStateValue } from "./StateProvider";
 import Noty from "noty";
 import "../node_modules/noty/lib/noty.css";
 import "../node_modules/noty/lib/themes/mint.css";
+import StarIcon from "@material-ui/icons/Star";
 
 function Product({ id, title, image, price, rating }) {
   const [state, dispatch] = useStateValue();
@@ -51,7 +52,7 @@ function Product({ id, title, image, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>🌟</p>
+              <p><StarIcon /></p>
             ))}
         </div>
       </div>
