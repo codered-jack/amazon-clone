@@ -13,7 +13,7 @@ const CarouselPage = () => {
       <MDBCarousel
         interval={4000}
         activeItem={1}
-        length={5}
+        length={7}
         showControls={false}
         showIndicators={false}
         className="z-depth-1"
@@ -64,6 +64,24 @@ const CarouselPage = () => {
                 className="d-block w-100 home__image"
                 src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Pantry/November2020/healthnwelnessfest/healthandwellnessfest1500x600__1._CB415603054_.jpg"
                 alt="Fifth slide"
+              />
+            </MDBView>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="6">
+            <MDBView>
+              <img
+                className="d-block w-100 home__image"
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Audio/Jbl_Infy_AmzSpcls/Jbl_F_Amzspc_Gw_1500x600._CB415615733_.jpg"
+                alt="Sixth slide"
+              />
+            </MDBView>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="7">
+            <MDBView>
+              <img
+                className="d-block w-100 home__image"
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/fashion/ApparelEvents/winter/GW/Hero/1500_e._CB417323670_.jpg"
+                alt="Seventh slide"
               />
             </MDBView>
           </MDBCarouselItem>
