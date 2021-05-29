@@ -13,6 +13,7 @@ import { useStateValue } from "./StateProvider";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Footer from "./Footer";
+import useAlan from './useAlan';
 
 const promise = loadStripe(
   "pk_test_51HoLtYLoxlv18OKZ9Wd6eYcJxn0fNxuOsaedtCbkugqb2QhMqrYpGYVaMDTdb47lHMQAStx2dBtooPaGaQ7XOgOe00aHYOKlTv"
@@ -20,6 +21,7 @@ const promise = loadStripe(
 
 function App() {
   const [{}, dispatch] = useStateValue();
+  useAlan();
 
   useEffect(() => {
     // will only run once when the app component loads...

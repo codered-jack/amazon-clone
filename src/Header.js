@@ -37,6 +37,7 @@ function Header() {
           <img
             className="header__logo"
             src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+            id="homepage_button"
           />
         </Link>
 
@@ -58,7 +59,7 @@ function Header() {
           </Link>
 
           <Link to="/orders">
-            <div className="header__option">
+            <div className="header__option" id="orders_button">
               <span className="header__optionLineOne">Returns</span>
               <span className="header__optionLineTwo">& Orders</span>
             </div>
@@ -74,6 +75,7 @@ function Header() {
             <div
               onMouseOver={handleDisplayCart}
               className="header__optionBasket"
+              id="checkout_button"
             >
               <ShoppingCartIcon />
               <span className="header__optionLineTwo header__basketCount">
